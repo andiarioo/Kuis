@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kuis Pemrograman Mobile"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biodata"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:onClick="ClickBiodata"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/launch"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_home"/>
+
+            <ImageButton
+                android:id="@+id/phone"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_phone"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_power"
+            android:onClick="ClickLogout"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
